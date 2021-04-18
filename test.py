@@ -1,4 +1,4 @@
-import pandas
+import pandas as pd
 
 print("hello Juraj")
 print("hello")
