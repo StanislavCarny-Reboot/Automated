@@ -18,7 +18,7 @@ cur = con.cursor()
 cur.execute(
 """
 INSERT INTO accounts (user_id,username,password,email,created_on)
-VALUES(2, 'tes2','pass','etes@emal.com','2020-01-01')
+VALUES(2, 'tes2','pass1','etes@emal1.com','2020-01-02')
 """
 )
 
