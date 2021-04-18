@@ -1,3 +1,5 @@
+import psycopg2
+
 # define connection
 con = psycopg2.connect(
     host ='ec2-54-72-155-238.eu-west-1.compute.amazonaws.com',
