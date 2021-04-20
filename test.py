@@ -5,6 +5,9 @@ import pandas as pd
 import os 
 
 database = os.environ.get("HEROKU_DB")
+password = os.environ.get("HEROKU_PASS")
+host = os.environ.get("HEROKU_HOST")
+user = os.environ.get("HEROKU_USER")
 
 
 test = pd.DataFrame({'Name':['runs']})
@@ -13,11 +16,10 @@ test['time'] = datetime.datetime.now()
 
 # define connection
 connect = "postgresql+psycopg2://%s:%s@%s:5432/%s" % (
-    'ziverzcxjkukah',
-   '86be3e356b4890952d6dddefc0580644b8e262797eacd19390e90c55b6b66d9b',
-    'ec2-54-72-155-238.eu-west-1.compute.amazonaws.com',
+    user,
+    password,
+    host,
     database
-    #'d77vu5pdkc80c5',
 )
 
 def to_alchemy(df):
