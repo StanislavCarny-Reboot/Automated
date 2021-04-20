@@ -39,6 +39,9 @@ jobs:
     - name: Test with pytest
       env: 
             HEROKU_DB: ${{ secrets.HEROKU_DB }}
+            HEROKU_HOST: ${{ secrets.HEROKU_HOST }}
+            HEROKU_PASS: ${{ secrets.HEROKU_PASS }}
+            HEROKU_USER: ${{ secrets.HEROKU_USER }}
       run: python test.py
          
          
