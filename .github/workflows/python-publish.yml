@@ -42,7 +42,7 @@ jobs:
             HEROKU_HOST: ${{ secrets.HEROKU_HOST }}
             HEROKU_PASS: ${{ secrets.HEROKU_PASS }}
             HEROKU_USER: ${{ secrets.HEROKU_USER }}
-      run: python test.py
+      run: python scrape_data.py
          
          
       
