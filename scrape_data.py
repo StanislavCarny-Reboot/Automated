@@ -97,6 +97,7 @@ def add_columns():
     final['quarter'] = final['locality'].apply(lambda x : x.split('- ')[-1]) 
     final['Average per Quarter'] = final.groupby('quarter')['price'].transform(np.mean)
     final['Podlaží'] = final['Podlaží'].apply(lambda x : str(x).replace('přízemí',"0."))
+    final['Podlaží'] = final['Podlaží'].replace('nan','0')
     final['Floor'] = final['Podlaží'].apply(lambda x : re.search('[0-9]',x)[0] if re.search('[0-9]',x)[0] is not None else '99')
     final['ScrapeDate'] = datetime.datetime.now()
     final.drop('locality.value',axis=1,inplace=True)
