@@ -102,11 +102,13 @@ def add_columns():
     final['ScrapeDate'] = datetime.datetime.now()
     final.drop('locality.value',axis=1,inplace=True)
     final.drop('Podlaží',axis=1,inplace=True)
-    new_column_names = ['hash_id', 'locality', 'name', 'price', 'sreality_link', 'image_url',
+    
+new_column_names = ['hash_id', 'locality', 'name', 'price', 'sreality_link', 'image_url',
        'lat', 'lon', 'refresh_date', 'material', 'ownership',
        'square_meters', 'rooms', 'quarter', 'avg_per_quarter', 'Floor',
        'ScrapeDate']
-    final.columns = new_column_names
+
+final.columns = new_column_names
 
 
     
