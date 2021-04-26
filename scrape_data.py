@@ -95,7 +95,7 @@ def add_columns():
     global join
     final['rooms'] = final['name'].apply(lambda x :re.search('[0-9]+\+kk|[0-9]+\+[0-9]',x)[0] if re.search('[0-9]+\+kk|[0-9]+\+[0-9]',x) is not None else None)
     final['quarter'] = final['locality'].apply(lambda x : x.split('- ')[-1]) 
-    final['Average per Quarter'] = final.groupby('quarter')['price'].transform(np.mean)
+    final['Average per Quarter'] = final.groupby(['quarter','rooms'])['price'].transform(np.mean)
     final['Podlaží'] = final['Podlaží'].apply(lambda x : str(x).replace('přízemí',"0."))
     final['Podlaží'] = final['Podlaží'].replace('nan','0')
     final['Floor'] = final['Podlaží'].apply(lambda x : re.search('[0-9]',x)[0] if re.search('[0-9]',x)[0] is not None else '99')
