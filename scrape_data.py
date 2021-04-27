@@ -127,7 +127,7 @@ def create_table_heroku(df):
 
     engine = create_engine(connect)
     df.to_sql(
-        'cron_test', 
+        'prg_apartments', 
         con=engine, 
         index=False, 
         if_exists='replace'
