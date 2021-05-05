@@ -101,8 +101,7 @@ def add_columns():
     final['Podlaží'] = final['Podlaží'].replace('nan','0')
     final['Floor'] = final['Podlaží'].apply(lambda x : re.search('[0-9]',x)[0] if re.search('[0-9]',x)[0] is not None else '99')
     final['ScrapeDate'] = datetime.datetime.now()
-    final.drop('locality.value',axis=1,inplace=True)
-    final.drop('Podlaží',axis=1,inplace=True)
+
 
 
     
@@ -147,6 +146,8 @@ for a in apis:
     join = clean_df()
     final = final.append(join)
     add_columns()
+    final.drop('locality.value',axis=1,inplace=True)
+    final.drop('Podlaží',axis=1,inplace=True)
     
 # rename columns for the DB
 new_column_names = ['hash_id', 'locality', 'name', 'price', 'sreality_link', 'image_url',
