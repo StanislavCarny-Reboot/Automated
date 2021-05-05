@@ -14,15 +14,17 @@ prefix = 'https://www.sreality.cz/api'
 
 one_kk = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=2&category_type_cb=1&locality_region_id=10&per_page=999&tms=1616528564937'
 one_plus_one = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=3&category_type_cb=1&locality_region_id=10&per_page=999&tms=1616528619889'
-two_KK_7M = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=4&category_type_cb=1&czk_price_summary_order2=7000000%7C10000000000&locality_region_id=10&per_page=999&tms=1616528426761'
-two_KK_7M_plus = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=4&category_type_cb=1&czk_price_summary_order2=0%7C7000000&locality_region_id=10&per_page=999&tms=1615495719220'
+two_KK_7M = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=4&category_type_cb=1&czk_price_summary_order2=1%7C7000000&locality_region_id=10&per_page=999&tms=1616528426761'
+two_KK_7M_plus = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=4&category_type_cb=1&czk_price_summary_order2=7000000%7C100000000&locality_region_id=10&per_page=999&tms=1615495719220'
 two_plus_one = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=5&category_type_cb=1&locality_region_id=10&per_page=999&tms=1617900806824'
-three_KK_10M = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=6&category_type_cb=1&czk_price_summary_order2=0%7C10000000&locality_region_id=10&per_page=999&tms=1617447770203'
+three_KK_10M = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=6&category_type_cb=1&czk_price_summary_order2=1%7C10000000&locality_region_id=10&per_page=999&tms=1619801573515'
 three_KK_10M_plus = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=6&category_type_cb=1&czk_price_summary_order2=10000000%7C10000000000&locality_region_id=10&per_page=999&tms=1617447848438'
-three_plus_one = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=7&category_type_cb=1&czk_price_summary_order2=10000000%7C10000000000&locality_region_id=10&per_page=999&tms=1617447924801'
-four = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=8%7C9&category_type_cb=1&czk_price_summary_order2=10000000%7C10000000000&locality_region_id=10&per_page=999&tms=1617447981333'
-five_and_more = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=10%7C11%7C12%7C16&category_type_cb=1&czk_price_summary_order2=10000000%7C10000000000&locality_region_id=10&per_page=999&tms=1617448030932'
+three_plus_one = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=7&category_type_cb=1&czk_price_summary_order2=1%7C10000000000&locality_region_id=10&per_page=999&tms=1619801137282'
+four = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=8%7C9&category_type_cb=1&czk_price_summary_order2=1%7C10000000000&locality_region_id=10&per_page=999&tms=1617447981333'
+five_and_more = 'https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_sub_cb=10%7C11%7C12%7C16&category_type_cb=1&czk_price_summary_order2=1%7C10000000000&locality_region_id=10&per_page=999&tms=1617448030932'
+
 apis = [one_kk,one_plus_one,two_KK_7M,two_KK_7M_plus,two_plus_one,three_KK_10M,three_KK_10M_plus,three_plus_one,four,five_and_more]
+
 
 #---------------------------------------------------------------------------------------
 
