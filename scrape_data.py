@@ -150,8 +150,10 @@ for a in apis:
     join = clean_df()
     final = final.append(join)
     add_columns()
-    final.drop('locality.value',axis=1,inplace=True)
-    final.drop('Podlaží',axis=1,inplace=True)
+    
+    
+final.drop('locality.value',axis=1,inplace=True)
+final.drop('Podlaží',axis=1,inplace=True)
     
 # rename columns for the DB
 new_column_names = ['hash_id', 'locality', 'name', 'price', 'sreality_link', 'image_url',
