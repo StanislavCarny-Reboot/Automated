@@ -103,6 +103,8 @@ def add_columns():
     final['Podlaží'] = final['Podlaží'].replace('nan','0')
     final['Floor'] = final['Podlaží'].apply(lambda x : re.search('[0-9]',x)[0] if re.search('[0-9]',x)[0] is not None else '99')
     final['ScrapeDate'] = datetime.datetime.now()
+    final['map.lat'].fillna('50.0939816') # replacting with generic lat
+    final['map.lon'].fillna('14.4105983') # replacting with generic lon
 
 
 
