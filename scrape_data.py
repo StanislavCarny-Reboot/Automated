@@ -161,6 +161,8 @@ new_column_names = ['hash_id', 'locality', 'name', 'price', 'sreality_link', 'im
        'square_meters', 'rooms', 'quarter', 'avg_per_quarter', 'Floor',
        'ScrapeDate']
 final.columns = new_column_names
+final['lat'] = final['lat'].astype('float')
+final['lon'] = final['lon'].astype('float')
 
 # push data to DB
 create_table_heroku(final)
