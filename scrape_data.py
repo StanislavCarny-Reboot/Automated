@@ -163,6 +163,8 @@ new_column_names = ['hash_id', 'locality', 'name', 'price', 'sreality_link', 'im
 final.columns = new_column_names
 final['lat'] = final['lat'].astype('float')
 final['lon'] = final['lon'].astype('float')
+final['price'] = final['price'].apply(lambda x:1 if x==0 else x)
+final['avg_per_quarter'] = final['avg_per_quarter'].apply(lambda x:1 if x==0 else x)
 
 # push data to DB
 create_table_heroku(final)
